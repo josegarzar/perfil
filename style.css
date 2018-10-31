@@ -1,0 +1,505 @@
+body, html {
+height: 100%;
+background: #fff;
+
+}
+
+/*
+.container-fluid {
+  background: url('images/fondopro.svg');
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+}
+*/
+
+
+
+.centrar{
+  width: 100%;
+  left: -1%;
+
+
+}
+
+#circlepro {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -2;
+
+
+}
+
+#mancha {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+
+}
+
+#cuadro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  top: 4%;
+  animation-name: cuadro;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#cuadro:hover #cuadro2{
+  animation-name: cuadro2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+}
+
+#cuadro2:hover {
+  animation-name: cuadro2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+embed {
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+
+
+  embed#cuadro:hover {
+  -webkit-transform:translate(10px,0px);
+  -moz-transform:translate(10px,0px);
+  -ms-transform:translate(10px,0px);
+  -o-transform:translate(10px,0px);
+  transform:translate(10px,0px);
+}
+
+
+@keyframes cuadro2{
+  25%{ transform: translateY(10px);}
+  50%{ transform: translateY(translateY(0px));}
+  75%{ transform: translateY(translateY(10px));}
+}
+
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.techo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.fondopro {
+  background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rEsR7wWpiteenoai/videoblocks-sweet-and-sour-sweets-sequence-colorful-candies-in-minimal-style-background_h8l7icopg_thumbnail-full06.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blanco {
+  background-color: #fff;
+}
+
+.principal {
+  background: url('fondo3.png');
+  height: 100%;
+  overflow: hidden;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 9;
+}
+
+.xd {
+  background-image: url('fondofiguras2.png');
+  height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: -9;
+}
+
+
+
+.btn-warning {
+  /* background-color: #ffec49; */
+  background-color: rgb(157, 195, 230);
+  border-color: transparent;
+  color: #fff;
+  border-radius: 0px;
+  animation-name: boton;
+  opacity: 0;
+  animation-iteration-count: 1;
+  animation: boton 2s forwards;
+  animation-delay: 0.6s;
+  border-radius: 2em;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+}
+
+.btn-warning:hover {
+  color: #fff;
+  /* border-radius: 2em;              HACER CIRCULAR AL PASAR EL MOUSE                  */
+  background-color: rgba(157, 195, 229, 0.863);
+  border-color: transparent;
+  box-shadow: none;
+
+
+}
+
+h1 {
+  animation-name: texto;
+  opacity: 0;
+  animation-iteration-count: 1;
+  animation: texto 2s forwards;
+  animation-delay: 0.2s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.espaciado {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-color: #fff;
+  z-index: 12;
+
+  /* PODER pasar las lineas curvas detras del texto se ocupa relative, absolute, o fixed */
+  position: relative;
+}
+
+
+
+
+#figura {
+  position: absolute;
+  animation-name: figura;
+  animation-duration: 23s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes figura {
+  0%{ opacity: 0; transform: rotate(20deg);}
+  25%{ opacity: 1;}
+  50%{ opacity: 1;}
+  100%{ opacity: 0;  }
+}
+
+@keyframes boton {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+@keyframes texto {
+  0%{  opacity: 0;}
+  100%{ opacity: 1;}
+}
+
+embed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+}
+
+.arreglar {
+  z-index: 10;
+}
+
+.menu {
+  position: fixed;
+  z-index: 18;
+  margin-left: -3.5em;
+  margin-top: 1em;
+  float: right;
+  border-radius: 0px;
+  /* border-color: #ffec49; */
+  border-color: transparent;
+  background: transparent;
+  color: #333;
+  transform: rotate(90deg);
+
+}
+
+.menu:hover{
+  animation-name: menu;
+  animation-iteration-count: 1;
+  background: transparent;
+  color: #333;
+  border-color: transparent;
+  animation: menu 1s forwards;
+}
+
+.menu:not(:hover){
+  animation: menu2 1s forwards;
+}
+
+@keyframes menu {
+  0%{ transform: rotate(90deg);}
+  100%{ transform: rotate(0deg); }
+}
+
+@keyframes menu2 {
+  0%{ transform: rotate(0deg);}
+  100%{ transform: rotate(90deg); }
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    box-shadow: none;
+ }
+
+ #map {
+   height: 93%;
+ }
+ /* Optional: Makes the sample page fill the window. */
+ html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }
+
+ .espacio-containers {
+   padding: 3em;
+   position: relative;
+   background: #fff;
+   z-index: 15;
+ }
+
+ .navbar-menu {
+   position: fixed;
+   z-index: 17;
+   padding-top: 3em;
+   float: right;
+   text-align: right;
+   width: 100%;
+   height: 0%;
+   padding-right: 1em;
+
+}
+
+
+.links-menu {
+  list-style: none;
+  display: none;
+}
+
+.links-menu:hover, a {
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  text-decoration-style: none;
+  text-decoration-color: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a.links:hover {
+  color: #fff5a0;
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  animation: href 0.2s forwards;
+}
+
+@keyframes href {
+  0%{color: #fff; font-size: 1em;}
+  100%{color: #fff5a0; font-size: 2em;}
+}
+
+.separacion {
+	margin: 0.5em;
+	padding: 0.5em;
+	/* padding-top: 3em;    QUITA EL ESPACIO DE ARRIBA DE LAS TARJETAS DE ICONOS   */
+	margin-bottom: 7em;
+
+}
+
+#hoja {
+  position: relative;
+  z-index: 1;
+}
+
+.mostrar-imagen {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 6em !important;
+}
+
+#hoja:hover {
+  animation-name: hoja;
+  animation-iteration-count: 1;
+  animation: hoja 1s forwards;
+}
+
+@keyframes hoja {
+  0%{transform: translateY(0em);}
+  100%{transform: translateY(-2em);}
+}
+
+#hoja:not(:hover) {
+  animation-name: hoja2;
+  animation-iteration-count: 1;
+  animation: hoja2 1s forwards;
+}
+
+@keyframes hoja2 {
+  0%{transform: translateY(-2em);}
+  100%{transform: translateY(0em);}
+}
+
+.bg-yellow {
+
+  background: linear-gradient(to bottom right, rgba(255,236,73,.7), rgba(255,209,76,.7));
+  /* background: ffffe8 */
+
+
+}
+
+.texto-figura {
+  color: #333;
+}
+
+.bg-white-sombra {
+  background: #fff;
+
+}
+
+.separacion-individual {
+  margin: .5em;
+	padding: 2em;
+	margin-right: 2em;
+	margin-left: 2em;
+	margin-top: 3em;
+	box-shadow: 0px 0px 24.24px 1.76px rgba(0, 0, 0, 0.09);
+}
+
+
+@keyframes overlays {
+  from { opacity: 0;}
+  to { opacity: 1; background-color: #555; }
+}
+
+
+footer {
+  /* background: linear-gradient(to bottom right, rgba(255,236,73,.7), rgba(255,209,76,.7));  */
+  background: #000;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  /* background: linear-gradient(to bottom right, rgba(255,236,73,.7), rgba(255,209,76,.7)); */
+  background:  #fff;
+}
+
+
+@media (max-width: 575px){
+  .container {
+    padding: 30px;
+  }
+}
+
+.card-img-overlay {
+    height: 0%;
+    background: #fff;
+    opacity: 0;
+    -webkit-transition: background 2s; /* For Safari 3.1 to 6.0 */
+    transition: background 2s, height 2s, opacity 2s;
+
+}
+
+.card-img-overlay:hover {
+  opacity: 1;
+  height: 110%;
+  background: #000;
+}
+
+.card-img-overlay:hover  .card-title {
+  opacity: 1;
+}
+
+.card-title {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.card-text {
+  opacity: 0;
+  animation: overlays-texto 1s forwards;
+}
+
+
+@keyframes overlays {
+  from { opacity: 0; height: 0%; }
+  to { opacity: 1; height: 100%;}
+}
+
+@keyframes overlays-texto {
+  from { opacity: 0; }
+  to { opacity: 1;}
+}
+
+
+
+
+
+
+/*            ANIMACIONES DE LINKS DEL FOOTER        */
+
+i.color-negro {
+  color: #343a40 !important;
+}
+
+i#linkedin.color-negro:hover::after{
+
+  animation: links-circulares 0.4s forwards;
+  padding: 5px;
+  color: #fff;
+  content: "José Luis Garza";
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-right: 0px !important;
+  border-radius: 2em;
+  background: rgba(157, 195, 229, 0.863);
+}
+
+
+@keyframes links-circulares {
+  0% { margin-left: 0px; padding-left: 0px; background-color: transparent;}
+    100% { margin-left: 5px; padding-left: 10px; padding-right: 10px; background: rgba(157, 195, 229, 0.863); }
+}
+
+@keyframes links-circulares-regreso {
+  from { margin-left: 5px; padding-left: 10px; padding-right: 10px; background: rgba(157, 195, 229, 0.863); }
+    to { margin-left: 0px; padding-left: 0px; padding-right: 0px; background-color: transparent; }
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
