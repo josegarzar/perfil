@@ -120,7 +120,7 @@ embed {
 }
 
 .principal {
-  background: url('fondo3.png');
+  background: url('images/fondo-background-azul.png');
   height: 100%;
   overflow: hidden;
 
@@ -484,6 +484,19 @@ i#linkedin.color-negro:hover::after{
   padding: 5px;
   color: #fff;
   content: "José Luis Garza";
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-right: 0px !important;
+  border-radius: 2em;
+  background: rgba(157, 195, 229, 0.863);
+}
+
+i#github.color-negro:hover::after{
+
+  animation: links-circulares 0.4s forwards;
+  padding: 5px;
+  color: #fff;
+  content: "Joségarzar";
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding-right: 0px !important;
