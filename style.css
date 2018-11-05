@@ -363,12 +363,16 @@ embed {
 
 }
 
-
+.links {
+  padding: 0.2em;
+}
 
 .links-menu {
   list-style: none;
   display: none;
+  
 }
+
 
 .links-menu:hover, a {
   list-style: none;
