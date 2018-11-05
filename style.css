@@ -22,7 +22,7 @@ background: #fff;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   background: linear-gradient(to right, rgb(39, 39, 39) 50%, transparent 50%);
-  background-size: 201% 100%;
+  background-size: 201% 101%;
   background-position: right bottom;
   transition: all .8s ease-out;
 }
