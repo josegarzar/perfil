@@ -225,6 +225,29 @@ svg {
   opacity: 0.3;
 }
 
+/*          ICONOS DE LA PÁGINA          */
+
+svg#icono-libro {
+  opacity: 1;
+  color: #9bcdf2 !important;
+}
+
+svg#icono-foco {
+  opacity: 1;
+  color: #9bcdf2 !important;
+}
+
+svg#icono-cerebro {
+  opacity: 1;
+  color: #9bcdf2 !important;
+}
+svg#icono-acha {
+  opacity: 1;
+  color: #9bcdf2 !important;
+}
+
+/* -----------------------ICONOS---------------------- */
+
 #figura {
   position: absolute;
   animation-name: figura;
