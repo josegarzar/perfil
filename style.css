@@ -448,7 +448,10 @@ footer {
   .container {
     padding: 30px;
   }
-
+  .nombre {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+  }
 }
 
 .card-img-overlay {
