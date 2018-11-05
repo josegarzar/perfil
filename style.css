@@ -14,6 +14,24 @@ background: #fff;
 }
 */
 
+.nombre {
+  border-radius: 1em;
+  display: flex;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  background: linear-gradient(to right, rgb(39, 39, 39) 50%, transparent 50%);
+  background-size: 201% 100%;
+  background-position: right bottom;
+  transition: all .8s ease-out;
+}
+
+.nombre:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+
 
 
 .centrar{
@@ -120,7 +138,7 @@ embed {
 }
 
 .principal {
-  background: url('images/fondo-background-azul-pro.png');
+  background: url('images/fondo-background-azul-mejora.png');
   height: 100%;
   overflow: hidden;
 
@@ -148,7 +166,7 @@ embed {
 
 .btn-warning {
   /* background-color: #ffec49; */
-  background-color: rgb(157, 195, 230);
+  background-color: #9bcdf2;
   border-color: transparent;
   color: #fff;
   border-radius: 0px;
@@ -159,6 +177,7 @@ embed {
   animation-delay: 0.6s;
   border-radius: 2em;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+  transform: scale(1.1);
 }
 
 .btn-warning:hover {
@@ -167,8 +186,13 @@ embed {
   background-color: rgba(157, 195, 229, 0.863);
   border-color: transparent;
   box-shadow: none;
+  transform: scale(1);
+}
 
+.principal:hover .nombre {
 
+  background-position: left bottom;
+  color: #fff;
 }
 
 h1 {
@@ -204,7 +228,6 @@ h1 {
   animation-name: figura;
   animation-duration: 23s;
   animation-iteration-count: infinite;
-
 }
 
 @keyframes figura {
@@ -215,8 +238,8 @@ h1 {
 }
 
 @keyframes boton {
-  0%{ opacity: 0; }
-  100%{ opacity: 1; }
+  0%{ opacity: 0; margin-left: 5em; }
+  100%{ opacity: 1; margin-left: 0em; }
 }
 
 @keyframes texto {
@@ -247,7 +270,6 @@ embed {
   background: transparent;
   color: #333;
   transform: rotate(90deg);
-
 }
 
 .menu:hover{
@@ -307,6 +329,7 @@ embed {
 }
 
 
+
 .links-menu {
   list-style: none;
   display: none;
@@ -334,7 +357,7 @@ a.links:hover {
 
 @keyframes href {
   0%{color: #fff; font-size: 1em;}
-  100%{color: #fff5a0; font-size: 2em;}
+  100%{color: #b1e5fd; font-size: 2em;}
 }
 
 .separacion {
@@ -425,6 +448,7 @@ footer {
   .container {
     padding: 30px;
   }
+
 }
 
 .card-img-overlay {
