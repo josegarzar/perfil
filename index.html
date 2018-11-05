@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300, 400,600" rel="stylesheet">
   </head>
 
 <nav class="text-right">
   <button type="button" class="btn btn-primary menu"><i class="fas fa-bars"></i></i></button>
   <div class="navbar-menu vertical-align justify-content-center">
     <ul class="links-menu text-center">
-      <a href="#" class="links"><li class="opcion-menu">Sobre mi</li></a>
-      <a href="#" class="links"><li class="opcion-menu">Habilidades</li></a>
-      <a href="#" class="links"><li class="opcion-menu">Intereses</li></a>
+      <a href="index.html" class="links"><li class="opcion-menu">Sobre mi</li></a>
+      <a href="habilidades.html" class="links"><li class="opcion-menu">Habilidades</li></a>
+      <a href="intereses.html" class="links"><li class="opcion-menu">Intereses</li></a>
     </ul>
   </div>
 </nav>
@@ -36,9 +36,22 @@
     </div>
   </div>
 
-  <div id="sobre-mi" class="row separacion text-justify mx-auto">
+  <!-- <div class="container-fluid descripcion bg-white pt-3">
+      <p class="px-3">Apasionado de los sistemas, su funcionamiento y su uso </p>
+    </div> -->
+
+    <div id="sobre-mi" class="container-fluid my-2">
+    <div class="card  descripcion">
+        <div class="card-body card-sobre-mi">
+          <h1 style="color: #9bcdf2;"><Strong>Sobre mi</Strong></h1>
+          <p class="card-text">Apasionado de los sistemas, su funcionamiento y su uso para brindar soluciones de calidad.</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="row separacion text-justify mx-auto">
       <div class="col-lg separacion-individual">
-        <h5 class="mb-4 text-center">Autodidacta</h5>
+        <h5 class="mb-4 text-center text-gray-card">Autodidacta</h5>
           <div class="container-fluid text-center mb-4">
                <!-- SVG -->
                <svg id="icono-libro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="2em" height="2em">
@@ -47,10 +60,10 @@
               </svg>
               <!-- /svg -->
           </div>
-          <p class="text-justify lead" style="text-align-last: center;">Aprender algo nuevo cada día es mi motivación y mi deseo de superarme, en esta vida aprendí que todo tiene un porque.</p>
+          <p class="text-justify lead monserrat-font" style="text-align-last: center;">Aprender algo nuevo cada día es mi motivación y mi deseo de superarme, en esta vida aprendí que todo tiene un porque.</p>
       </div>
       <div class="col-lg separacion-individual">
-        <h5 class="mb-4 text-center">Creativo</h5>
+        <h5 class="mb-4 text-center text-gray-card">Creativo</h5>
           <div class="container-fluid text-center mb-4">
             <!-- SVG -->
             <!-- <svg id="icono-foco"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" width="2em" height="2em">
@@ -64,19 +77,21 @@
               <path fill="currentColor" d="M509.65 230.28c17.51-54.46-20.08-93.16-41.06-105.31 2.67-37.66-25.86-74.32-66.68-79.39C389.96 18.23 362.8 0 332.22 0 307.63 0 285.96 11.85 272 29.9 258.04 11.85 236.37 0 211.78 0c-30.58 0-57.74 18.23-69.7 45.58-40.82 5.07-69.35 41.73-66.68 79.39-20.98 12.16-58.56 50.85-41.06 105.31C12.89 247.42 0 273.44 0 301c0 32.73 17.41 62.38 45.26 78.53-2.28 48.18 36.69 88.69 84.94 87.45 14.24 27.38 42.59 45.02 74.05 45.02 27.9 0 52.51-13.8 67.75-34.76C287.24 498.2 311.85 512 339.75 512c31.46 0 59.81-17.64 74.05-45.02 48.25 1.24 87.21-39.28 84.94-87.45C526.59 363.38 544 333.73 544 301c0-27.56-12.89-53.58-34.35-70.72zm-253.71-92.21c0 26.09-18.06 47.88-42.35 54.04-3.47.88-5.83 4.09-5.83 7.66v16.18c0 5.07 4.69 8.91 9.68 7.89 14.43-2.94 27.54-9.41 38.5-18.39V428.5c0 28.39-23.18 51.5-51.69 51.5-31.89 0-44.23-21.81-53.1-48.2-16.29 2.74-18.29 3.2-22.18 3.2-28.51 0-51.69-23.11-51.69-51.5 0-6.21.86-9.14 3.67-22.97-25.44-10.5-48.84-24.21-48.84-59.53 0-33.86 23.01-46.95 42.91-58.34-12.6-25.71-12.8-29.2-12.8-39.16 0-33.91 21.9-48.46 49.37-59.69-2.51-10.9-4.2-16.61-4.2-22.81 0-24.14 19.6-43.8 45.48-43.8h.41l12.73.27C171.92 54.52 181.04 32 211.78 32c24.34 0 44.16 19.73 44.16 44v62.07zm207.11 222.46c2.81 13.83 3.67 16.76 3.67 22.97 0 28.39-23.18 51.5-51.69 51.5-3.88 0-5.88-.46-22.18-3.2-8.87 26.39-21.21 48.2-53.1 48.2-28.51 0-51.69-23.11-51.69-51.5V205.45c10.96 8.98 24.07 15.45 38.5 18.39 4.99 1.02 9.68-2.82 9.68-7.89v-16.18c0-3.57-2.36-6.78-5.83-7.66-24.29-6.16-42.35-27.95-42.35-54.04V76c0-24.27 19.82-44 44.16-44 30.74 0 39.86 22.52 45.76 45.47l12.73-.27h.41c25.88 0 45.48 19.66 45.48 43.8 0 6.2-1.7 11.92-4.2 22.81 27.46 11.22 49.37 25.78 49.37 59.69 0 9.96-.2 13.45-12.8 39.16 19.9 11.39 42.91 24.48 42.91 58.34 0 35.33-23.39 49.04-48.83 59.53z"></path>
             </svg>
           </div>
-        <p class="text-justify lead" style="text-align-last: center;">Siempre una pizca de creatividad para resolver un problema, plasmar una idea o simplemente imaginar.</p>
+        <p class="text-justify lead monserrat-font" style="text-align-last: center;">Siempre una pizca de creatividad para resolver un problema, plasmar una idea o simplemente imaginar.</p>
       </div>
       <div class="col-lg separacion-individual">
-        <h5 class="mb-4 text-center">Persistente</h5>
+        <h5 class="mb-4 text-center text-gray-card">Persistente</h5>
           <div class="container-fluid text-center mb-4">
             <svg id="icono-acha" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="2em" height="2em">
               <path fill="currentColor" d="M525.74 160l-47.27-47.27 24.16-24.16c12.5-12.5 12.5-32.76 0-45.26L468.69 9.37C462.44 3.12 454.25 0 446.06 0s-16.38 3.12-22.63 9.37l-24.16 24.16-24.15-24.16C368.87 3.12 360.68 0 352.49 0s-16.38 3.12-22.63 9.37l-96.49 96.49c-12.5 12.5-12.5 32.76 0 45.25l24.16 24.16L9.37 423.43c-12.5 12.5-12.5 32.76 0 45.26l33.94 33.94c6.25 6.25 14.44 9.37 22.63 9.37s16.38-3.12 22.63-9.37l248.16-248.16L384 301.74V416h32c123.71 0 224-100.29 224-224v-32H525.74zM446.03 32h.03L480 65.94 455.84 90.1l-33.95-33.96L446.03 32zM65.94 480L32 446.06 280.16 197.9l33.94 33.94L65.94 480zM416 384v-95.51l-160-160L352.46 32h.03l160 160H608c0 105.87-86.13 192-192 192z"></path>
               <path fill="currentColor" d="M525.74 160l-47.27-47.27 24.16-24.16c12.5-12.5 12.5-32.76 0-45.26L468.69 9.37C462.44 3.12 454.25 0 446.06 0s-16.38 3.12-22.63 9.37l-24.16 24.16-24.15-24.16C368.87 3.12 360.68 0 352.49 0s-16.38 3.12-22.63 9.37l-96.49 96.49c-12.5 12.5-12.5 32.76 0 45.25l24.16 24.16L9.37 423.43c-12.5 12.5-12.5 32.76 0 45.26l33.94 33.94c6.25 6.25 14.44 9.37 22.63 9.37s16.38-3.12 22.63-9.37l248.16-248.16L384 301.74V416h32c123.71 0 224-100.29 224-224v-32H525.74zM446.03 32h.03L480 65.94 455.84 90.1l-33.95-33.96L446.03 32zM65.94 480L32 446.06 280.16 197.9l33.94 33.94L65.94 480zM416 384v-95.51l-160-160L352.46 32h.03l160 160H608c0 105.87-86.13 192-192 192z"></path>
             </svg>
           </div>
-        <p class="lead text-center">Jamás darse por vencido hasta lograrlo, la clave del triunfo.</p>
+        <p class="lead text-center monserrat-font" style="text-align-last: center;">Jamás darse por vencido hasta lograrlo, la clave del triunfo.</p>
       </div>
     </div>
+
+    
 
     <div class="container-fluid azul pt-3">
       <div class="row lenguajes text-center">
@@ -94,6 +109,7 @@
         </div>
       </div>
     </div>
+    
 
 <footer class="col py-5">
   <div class=" text-center mb-0 text-dark py-3 borde-footer">
