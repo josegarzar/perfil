@@ -363,16 +363,15 @@ embed {
 
 }
 
-.links {
-  padding: 0.2em;
+
+.opcion-menu{
+  margin: 2em;
 }
 
 .links-menu {
   list-style: none;
   display: none;
-  
 }
-
 
 .links-menu:hover, a {
   list-style: none;
@@ -388,7 +387,7 @@ a.links:hover {
   text-decoration: none;
   text-decoration-style: none;
   list-style: none;
-  font-size: 4em;
+  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   animation: href 0.2s forwards;
@@ -396,7 +395,7 @@ a.links:hover {
 
 @keyframes href {
   0%{color: #fff; font-size: 1em;}
-  100%{color: #b1e5fd; font-size: 2em;}
+  100%{color: #b1e5fd; font-size: 1.6em;}
 }
 
 .separacion {
