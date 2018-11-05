@@ -221,14 +221,16 @@ h1 {
   position: relative;
 }
 
-
-
+svg {
+  opacity: 0.3;
+}
 
 #figura {
   position: absolute;
   animation-name: figura;
   animation-duration: 23s;
   animation-iteration-count: infinite;
+  opacity: 0.1;
 }
 
 @keyframes figura {
