@@ -32,6 +32,10 @@ padding: 0;
   color: #9bcdf2;
 }
 
+.bg-lightblue {
+  background: #9bcdf2;
+}
+
 .text-gray-card {
   color: #777;
   font-family: 'Montserrat', sans-serif;
@@ -57,6 +61,22 @@ embed {
   overflow-x: hidden;
 }
 
+.galeria {
+  padding: 2em;
+  background: #edf7ff;
+}
+
+.imagen-galeria {
+  transition: box-shadow 0.5s, transform 0.5s;
+  transform: scale(0.9);
+}
+
+.imagen-galeria:hover {
+  /* border: 1px #ebebeb solid;  */
+  box-shadow: 25px 25px rgba(208, 231, 247, 0.548);
+  transform: scale(0.95);
+}
+
 .azul {
   background: #d4ecff7a;
   box-shadow: #000 10px solid;
@@ -80,6 +100,24 @@ embed {
 
 .card-sobre-mi {
   border-left: 3px solid #9bcdf2;
+}
+
+.proyectos{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.4em;
+  background: #fff !important;
+  color: #777;
+  text-align: center;
+  background: url('images/background.png');
+}
+
+.proyecto-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: #9bcdf2;
+  text-align: left;
 }
 
 .monserrat-font {
@@ -375,6 +413,9 @@ footer {
   .principal:hover .nombre {
     background-position: right bottom;
     color: #333;
+  }
+  .proyectos {
+    font-size: 0.8em;
   }
 }
 
